@@ -1,8 +1,10 @@
 import simulstreaming.utils.line_packet as line_packet
 
+
 class Connection:
-    '''it wraps conn object'''
-    PACKET_SIZE = 32000*5*60 # 5 minutes # was: 65536
+    """it wraps conn object"""
+
+    PACKET_SIZE = 32000 * 5 * 60  # 5 minutes # was: 65536
 
     def __init__(self, conn):
         self.conn = conn
@@ -11,7 +13,7 @@ class Connection:
         self.conn.setblocking(True)
 
     def send(self, line):
-        '''it doesn't send the same line twice, because it was problematic in online-text-flow-events'''
+        """it doesn't send the same line twice, because it was problematic in online-text-flow-events"""
         if line == self.last_line:
             return
         line_packet.send_one_line(self.conn, line)

@@ -1,16 +1,16 @@
 # How is it checked? Either/or:
-    # - by native speaker
-    # - from https://www.omniglot.com/language/phrases/hovercraft.htm
-    # - the rest is from ChatGPT, so it might be not correct.
+# - by native speaker
+# - from https://www.omniglot.com/language/phrases/hovercraft.htm
+# - the rest is from ChatGPT, so it might be not correct.
 
 hovercraft_translations = {
     "bg": "Моят ховеркрат е пълен с змиорки.",
     "hr": "Moj zračni čamac je pun jegulja.",
     # native speaker checked:
-    "cs": "Moje vznášedlo je plné úhořů.", 
+    "cs": "Moje vznášedlo je plné úhořů.",
     "da": "Mit luftkøretøj er fuld af ål.",
     # omniglot:
-    "da": "Mit luftpudefartøj er fyldt med ål.", 
+    "da": "Mit luftpudefartøj er fyldt med ål.",
     "nl": "Mijn luchtkussenboot zit vol met palingen.",
     "en": "My hovercraft is full of eels.",
     "et": "Minu õhulaev on täis angerjaid.",
@@ -19,7 +19,7 @@ hovercraft_translations = {
     # omniglot:
     "de": "Mein Luftkissenfahrzeug ist voller Aale.",
     # chatGPT provided, it's wrong:
-#        "de": "Mein Luftkissenboot ist voller Aale.",
+    #        "de": "Mein Luftkissenboot ist voller Aale.",
     "el": "Η αερόστρωσή μου είναι γεμάτη χέλια.",
     "hu": "A légpárnás hajóm tele van angolnákkal.",
     "ga": "Tá mo hovercraft lán le éisc eala.",
@@ -32,12 +32,12 @@ hovercraft_translations = {
     # omniglot:
     "pt": "O meu hovercraft está cheio de enguias.",
     # chatGPT provided:
-#        "pt": "O meu aerobarco está cheio de enguias.",
+    #        "pt": "O meu aerobarco está cheio de enguias.",
     "ro": "Hovercraft-ul meu este plin cu anghile.",
     # omniglot:
     "sk": "Moje vznášadlo je plné úhorov.",
     # chatGPT provided:
-#        "sk": "Môj vznášadlo je plné úhorov.",
+    #        "sk": "Môj vznášadlo je plné úhorov.",
     "sl": "Moj zračni čoln je poln jegulj.",
     # omniglot and chatGPT agree!
     "es": "Mi aerodeslizador está lleno de anguilas.",
@@ -56,7 +56,9 @@ hovercraft_translations = {
     # omniglot, one of versions:
     "uk": "Моє судно на повітряній подушці наповнене вуграми.",
     # chatGPT provided:
-#        "uk": "Мій ховеркрафт повний вугрів."
+    #        "uk": "Мій ховеркрафт повний вугрів."
 }
+
+
 def hovercraft_sentence(lang_code):
     return hovercraft_translations[lang_code]
